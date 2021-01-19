@@ -1,14 +1,14 @@
 # getTvhProgram.sh
-bash commands to get information from TVHeadend Server epg API
-
-
-
 Similarly as my getMythProgram.sh bash script. This one will pull from a TVH server using its API. 
 Which I reference from the TVH-API-docs
 
+No script yet, just some 
+bash commands to get information from TVHeadend Server EPG API
+
 
 *After reading the API docs more I saw the NOW option for only those currently playing 
-*The following shows all 
+*The following shows all 'NOW' playing
+
 http://TVH_SERVER:9981/api/epg/events/grid?mode=now
 
 ```
@@ -17,7 +17,8 @@ http://TVH_SERVER:9981/api/epg/events/grid?mode=now
 
 
 
-*using curl in shell piped out through jq gives a nice format vs long lines.
+*using curl in shell piped out through jq gives a nice format vs the long lines as default.
+
 ```
 curl -s 'http://user:pass@TVH_SERVER:9981/api/epg/events/grid?mode=now'|jq
 {
