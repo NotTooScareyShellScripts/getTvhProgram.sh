@@ -165,8 +165,315 @@ curl -s 'http://kelsie:1234@192.168.1.218:9981/api/epg/events/grid?mode=now&chan
 }
 ```
 
+*This will give you a nice channel list in json
+```
+curl -s 'http://user:passwd@TVH_SERVER:9981/api/channel/grid?sort=number'|jq
+
+```
+{
+  "entries": [
+    {
+      "uuid": "e3dbc14ddfdafc4fd38bfca36e8a2c0a",
+      "enabled": true,
+      "autoname": true,
+      "name": "CBS13",
+      "number": "13.1",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "9e9c4112e3d895b6986ec0132b374509"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "e51803cab122b7739a65926dd773e950",
+      "enabled": true,
+      "autoname": true,
+      "name": "TBD",
+      "number": "13.2",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "5a99c6600b304f153e88cea9341ec9b8"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "027bd039eddf1bf87ac0e4a3b235a40c",
+      "enabled": true,
+      "autoname": true,
+      "name": "Charge!",
+      "number": "13.3",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "14697001fdbefc17089d0ae3c3f87e0e"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "90551674f3341e9cd781b234ccf3a6a2",
+      "enabled": true,
+      "autoname": true,
+      "name": "NBC16",
+      "number": "16.1",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "46e5363d58f3835135f5cc2908482056"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "9d94c6bb1e08ccb355a26823a29965ba",
+      "enabled": true,
+      "autoname": true,
+      "name": "CW Plus",
+      "number": "16.2",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "7c87b2fed991fbd6fae7651be9eefdc6"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "cf544d99dc70845ef8956eb12f67f544",
+      "enabled": true,
+      "autoname": true,
+      "name": "comet",
+      "number": "16.3",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "c8512c8f99e8ce6d4664403fb3f80c23"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "52255ad28ad2f35f7c118f4dd8ce2733",
+      "enabled": true,
+      "autoname": true,
+      "name": "KEVU-HD",
+      "number": "23.1",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "1861c937e36510d4d181e6db9ac4b80f"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "86266e279730052fd8546fe2c18b8aa4",
+      "enabled": true,
+      "autoname": true,
+      "name": "DABL",
+      "number": "23.2",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "2272a17f1165a1ad95b169c1586baf14"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "9a31c087f7223bf2a169319b818e9f04",
+      "enabled": true,
+      "autoname": true,
+      "name": "OPB-HD Channel",
+      "number": "28.1",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "43f4f262431045934e8cefae46dfa0d5"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "5cb16135817e51e6b9ff74e5203bccaf",
+      "enabled": true,
+      "autoname": true,
+      "name": "OPBPlus",
+      "number": "28.2",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "7605364189caadff0b76176353edaa25"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "3e93e45c972f7423413ebdce07233278",
+      "enabled": true,
+      "autoname": true,
+      "name": "OPBKids",
+      "number": "28.3",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "9d49471cfd816cff52f4a7a0d6970313"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "62ff00f6c4bf770c1ae5384678b891ef",
+      "enabled": true,
+      "autoname": true,
+      "name": "OPB-FM",
+      "number": "28.4",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "42195a7c05dde7f43f70ac319b089b4b"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "83768a3c4222ded7ff7798937c728771",
+      "enabled": true,
+      "autoname": true,
+      "name": "KLSR-HD",
+      "number": "34.1",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "e394df4fdb2da0c4122c202095dbaa86"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    },
+    {
+      "uuid": "df5c5000a9440fe40be8db499403ee36",
+      "enabled": true,
+      "autoname": true,
+      "name": "KEVU-DT",
+      "number": "34.2",
+      "epgauto": true,
+      "epggrab": [],
+      "dvr_pre_time": 0,
+      "dvr_pst_time": 0,
+      "epg_running": -1,
+      "services": [
+        "22cc0657256838b857dad77a83259663"
+      ],
+      "tags": [
+        "d7050e9df03fc86abde7fb5b04502df5",
+        "ce74bb7a975412b626629cfea79aca20",
+        "11fdd6edafcbbecf6475fd992530d200"
+      ],
+      "bouquet": ""
+    }
+  ],
+  "total": 14
+}
 
 
+
+
+```
 
 
 
