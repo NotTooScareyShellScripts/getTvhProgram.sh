@@ -30,7 +30,7 @@ http://192.168.1.218:9981/api/epg/events/grid?mode=now
 
 
 
-*using curl in shell piped out through jq 
+*using curl in shell piped out through jq gives a nice format vs long lines.
 ```
 curl -s 'http://kelsie:1234@192.168.1.218:9981/api/epg/events/grid?mode=now'|jq
 {
