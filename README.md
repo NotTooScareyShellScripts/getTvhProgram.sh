@@ -156,7 +156,6 @@ curl -s 'http://user:pass@TVH_SERVER:9981/api/epg/events/grid?mode=now&channel=C
 ```
 curl -s 'http://user:passwd@TVH_SERVER:9981/api/channel/grid?sort=number'|jq
 
-```
 {
   "entries": [
     {
