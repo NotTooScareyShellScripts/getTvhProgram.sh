@@ -153,7 +153,7 @@ curl -s 'http://user:pass@TVH_SERVER:9981/api/epg/events/grid?mode=now&channel=C
 ```
 
 *This will give you a nice channel list in json  using the sort parameter by 'number'. 
-*Note jq is just assembling the defaults, the sort is serverside API
+*Note jq is just assembling the defaults, the sort in this cae is serverside API
 
 ```
 curl -s 'http://user:passwd@TVH_SERVER:9981/api/channel/grid?sort=number'|jq
