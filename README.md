@@ -14,6 +14,7 @@ so far i tested a few stanzas:
 *Don't forget to change my ip to yours when testing.
 
 *eg from mine I tested 'comet'
+
 http://192.168.1.218:9981/api/epg/events/grid?limit=1&channel=comet
 
 ```
@@ -142,7 +143,27 @@ curl -s 'http://kelsie:1234@192.168.1.218:9981/api/epg/events/grid?mode=now'|jq
 }
 ```
 
-
+*Getting one channel again by NAME but parsed through jq
+```
+curl -s 'http://kelsie:1234@192.168.1.218:9981/api/epg/events/grid?mode=now&channel=CBS13'|jq
+{
+  "totalCount": 1,
+  "entries": [
+    {
+      "eventId": 67,
+      "episodeId": 68,
+      "channelName": "CBS13",
+      "channelUuid": "e3dbc14ddfdafc4fd38bfca36e8a2c0a",
+      "channelNumber": "13.1",
+      "start": 1611027001,
+      "stop": 1611028801,
+      "title": "Wheel of Fortune",
+      "description": "In a classic game-show version of &quot;Hangman,&quot; contestants solve word puzzles for cash and prizes.",
+      "nextEventId": 69
+    }
+  ]
+}
+```
 
 
 
