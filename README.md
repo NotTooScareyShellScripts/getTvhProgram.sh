@@ -1,5 +1,7 @@
 # getTvhProgram.sh
-Similarly as my getMythProgram.sh bash script. This one will pull from a TVH server using its API. 
+Similarly as my getMythProgram.sh bash script that pulls program data via cmd line.
+
+This one will pull from a TVH server using its API. 
 Which I reference from the TVH-API-docs
 
 No script yet, just some 
